@@ -1,11 +1,10 @@
 // 題目 4：遞迴的足跡 (Footsteps of Recursion) - 30分
-
 #include <iostream>
 using namespace std;
 
 void line(int depth){
     if(depth == 0) return;
-    cout << "|--" << endl;
+    cout << "|--" ;
     line(depth - 1);
 }
 
