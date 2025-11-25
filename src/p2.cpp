@@ -3,8 +3,17 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    
-    
+int gcb(int a,int b){
+    if(b == 0){
+        return a;
+    }else{
+        return gcb(b,a%b);
+    }
+}
+
+int main(){
+    int a,b;
+    cin >> a >> b;
+    cout << gcb(a,b) << endl;
     return 0;
 }
