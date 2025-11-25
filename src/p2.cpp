@@ -3,17 +3,17 @@
 #include <iostream>
 using namespace std;
 
-int gcb(int a,int b){
+int gcd(int a,int b){
     if(b == 0){
         return a;
     }else{
-        return gcb(b,a%b);
+        return gcd(b,a%b);
     }
 }
 
 int main(){
     int a,b;
     cin >> a >> b;
-    cout << gcb(a,b) << endl;
+    cout << gcd(a,b) << endl;
     return 0;
 }
