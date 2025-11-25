@@ -23,7 +23,7 @@ void hanoi(int n, int from, int to, int aux) {
     }
 
     hanoi(n - 1, from, aux, to);
-    moveDisk(n, from, to);  // 加入 disk 編號
+    moveDisk(n, from, to); 
     hanoi(n - 1, aux, to, from);
 }
 
